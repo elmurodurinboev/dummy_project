@@ -1,10 +1,10 @@
-function App() {
+import AppProvider from './providers';
+import AppRouter from './routes';
 
+export default function App() {
   return (
-    <>
-      salom
-    </>
-  )
+    <AppProvider>
+      <AppRouter />
+    </AppProvider>
+  );
 }
-
-export default App
